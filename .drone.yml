@@ -16,6 +16,7 @@ steps:
       GOPROXY: https://mirrors.aliyun.com/goproxy/
     commands:
       - CGO_ENABLED=0 go build -o demo-app
+      - pwd
   - name: docker
     image: plugins/docker
     settings:
